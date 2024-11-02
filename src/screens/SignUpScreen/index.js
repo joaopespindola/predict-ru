@@ -9,7 +9,7 @@ export const SignUpScreen = () => {
   return (
     <View style={styles.container}>
       <Logo />
-      <TitleText color="black">Cadastro PredictRU</TitleText>
+      <TitleText>Cadastro PredictRU</TitleText>
       <SignUpForm />
     </View>
   );

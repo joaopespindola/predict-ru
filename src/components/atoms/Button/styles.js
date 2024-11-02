@@ -2,7 +2,7 @@
 import styled from 'styled-components/native';
 
 export const ButtonContainer = styled.TouchableOpacity`
-  background-color: #007BFF;
+  background-color: ${({ theme }) => theme.colors.blue};
   padding: 12px 24px;
   border-radius: 5px;
   align-items: center;
