@@ -1,23 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View} from 'react-native';
-import { CustomText, Logo } from '../../components';
+import { Container, CustomText, Logo } from '../../components';
 import { TitleText } from '../../components/atoms/Text/styles';
 
 export const SplashScreen = () => {
   return (
-    <View style={styles.container}>
+    <Container align = "center" justify = "center">
       <Logo />
       <TitleText color="black">PredictRU</TitleText>
       <StatusBar style="auto" />
-    </View>
+    </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

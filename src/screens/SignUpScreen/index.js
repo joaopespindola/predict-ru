@@ -3,23 +3,14 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { SignUpForm } from '../../components/molecules/SignUpForm';
 import { TitleText } from '../../components/atoms/Text/styles';
-import { Logo } from '../../components/atoms/Logo';
+import { Container, CustomText, Logo } from '../../components';
 
 export const SignUpScreen = () => {
   return (
-    <View style={styles.container}>
+    <Container align = "center" justify = "center">
       <Logo />
       <TitleText>Cadastro PredictRU</TitleText>
       <SignUpForm />
-    </View>
+    </Container>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

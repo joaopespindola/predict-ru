@@ -3,9 +3,9 @@ import styled from 'styled-components/native';
 
 export const TextInput = styled.TextInput`
   width: 80%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
+  padding: ${({ theme }) => theme.metrics.px(10)}px;
+  margin-bottom: ${({ theme }) => theme.metrics.px(12)}px;
+  border-radius: ${({ theme }) => theme.metrics.px(5)}px;
+  border: ${({ theme }) => theme.metrics.px(1)}px solid #ccc;
+  font-size: ${({ theme }) => theme.metrics.px(16)}px;
 `;
