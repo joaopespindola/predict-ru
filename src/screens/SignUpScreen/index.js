@@ -7,7 +7,7 @@ export const SignUpScreen = () => {
   return (
     <Container align = "center" justify = "center">
       <Logo />
-      <Text variant="title">Cadastro PredictRU</Text>
+      <Text variant="title">PredictRU</Text>
       <SignUpForm />
     </Container>
   );

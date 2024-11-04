@@ -12,7 +12,7 @@ export const LoginScreen = () => {
     <Container align = "center" justify = "center">
       <Logo />
       <Text variant="title" color="black">PredictRU Login</Text>
-      <LoginForm />
+      <LoginForm onLogin={() => navigation.navigate('StudentHome')} />
       <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
         <Text>Don't have an account? Sign Up</Text>
       </TouchableOpacity>

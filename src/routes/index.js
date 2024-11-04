@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { SplashScreen } from '../screens/SplashScreen'
 import { SignUpScreen } from '../screens/SignUpScreen'
 import { LoginScreen } from '../screens/LoginScreen'
+import { HomeStudentScreen } from '../screens/HomeStudentScreen'
 import { MealAvaliationsScreen } from '../screens/MealAvaliationsScreen'
 
 export const Routes = () => {
@@ -13,6 +14,7 @@ export const Routes = () => {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Splash" component={SplashScreen} />
+        <Stack.Screen name="StudentHome" component={HomeStudentScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Meals" component={MealAvaliationsScreen} />
