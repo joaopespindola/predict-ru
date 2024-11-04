@@ -1,7 +1,6 @@
 import React from 'react'
 import { FlatList } from 'react-native'
 import { Card } from '../../molecules'
-import { Text } from '../../atoms'
 
 const FAKE_DATA = [
   {

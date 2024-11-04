@@ -1,4 +1,3 @@
-// src/components/atoms/Input/index.js
 import React from 'react';
 import { TextInput } from './styles';
 

@@ -20,3 +20,5 @@ export const Routes = () => {
     </NavigationContainer>
   )
 }
+
+export default Routes

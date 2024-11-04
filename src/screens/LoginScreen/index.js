@@ -1,16 +1,21 @@
-// src/screens/LoginScreen/index.js
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { TouchableOpacity } from 'react-native';
+import { Text } from '../../components/atoms/Text';
+import { useNavigation } from '@react-navigation/native';
 import { LoginForm } from '../../components/molecules/LoginForm';
-import { TitleText } from '../../components/atoms/Text/styles';
-import { Container, CustomText, Logo } from '../../components';
+import { Container, Logo } from '../../components';
 
 export const LoginScreen = () => {
+  const navigation = useNavigation();
+
   return (
     <Container align = "center" justify = "center">
       <Logo />
-      <TitleText color="black">PredictRU Login</TitleText>
+      <Text variant="title" color="black">PredictRU Login</Text>
       <LoginForm />
+      <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
+        <Text>Don't have an account? Sign Up</Text>
+      </TouchableOpacity>
     </Container>
   );
 };

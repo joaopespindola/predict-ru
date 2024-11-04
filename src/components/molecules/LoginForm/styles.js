@@ -1,4 +1,3 @@
-// src/components/molecules/LoginForm/styles.js
 import styled from 'styled-components/native';
 
 export const FormContainer = styled.View`

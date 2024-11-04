@@ -1,15 +1,13 @@
-// src/screens/SignUpScreen/index.js
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
 import { SignUpForm } from '../../components/molecules/SignUpForm';
-import { TitleText } from '../../components/atoms/Text/styles';
-import { Container, CustomText, Logo } from '../../components';
+import { Container, Logo } from '../../components';
+import { Text } from '../../components/atoms/Text';
 
 export const SignUpScreen = () => {
   return (
     <Container align = "center" justify = "center">
       <Logo />
-      <TitleText>Cadastro PredictRU</TitleText>
+      <Text variant="title">Cadastro PredictRU</Text>
       <SignUpForm />
     </Container>
   );

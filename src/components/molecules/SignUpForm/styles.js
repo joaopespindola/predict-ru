@@ -1,4 +1,3 @@
-// src/components/molecules/SignUpForm/styles.js
 import styled from 'styled-components/native';
 
 export const FormContainer = styled.View`

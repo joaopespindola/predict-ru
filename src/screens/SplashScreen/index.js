@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View} from 'react-native';
-import { Container, CustomText, Logo } from '../../components';
-import { TitleText } from '../../components/atoms/Text/styles';
+import { Text } from '../../components/atoms/Text';
+import { Container, Logo } from '../../components';
 
 export const SplashScreen = ({ navigation }) => {
   useEffect(() => {
@@ -14,7 +13,7 @@ export const SplashScreen = ({ navigation }) => {
   return (
     <Container align = "center" justify = "center">
       <Logo />
-      <TitleText color="black">PredictRU</TitleText>
+      <Text variant="title">PredictRU</Text>
       <StatusBar style="auto" />
     </Container>
   );
