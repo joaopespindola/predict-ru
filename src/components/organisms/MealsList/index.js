@@ -36,7 +36,7 @@ export const MealsList = () => {
       horizontal
       data={FAKE_DATA}
       renderItem={({ item }) => <Card item={item} />}
-      keyExtractor={(item) => item.id} // Pega om id de todos os itens que estão sendo renderizados
+      keyExtractor={(item) => String(item.id)} // Pega om id de todos os itens que estão sendo renderizados
     />
   )
 }
