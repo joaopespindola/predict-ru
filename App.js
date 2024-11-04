@@ -6,6 +6,7 @@ import { SplashScreen } from './src/screens/SplashScreen';
 import { SignUpScreen } from './src/screens/SignUpScreen';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './src/styles';
+import { MealAvaliationsScreen } from './src/screens/MealAvaliationsScreen';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);// useState é um hook do React para gerenciar estado em componentes funcionais
@@ -22,7 +23,7 @@ export default function App() {
       {showSplash ? (
         <SplashScreen />
       ) : (
-        <SignUpScreen />
+        <MealAvaliationsScreen />
       )}
     </ThemeProvider>
   );
